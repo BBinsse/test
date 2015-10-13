@@ -16,7 +16,7 @@ class DefaultController extends Controller
         if(!is_object($article)){
             throw $this->createNotFoundException();
         }
-        var_dump($article);
+
         return $article;
     }
 }

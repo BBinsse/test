@@ -15,8 +15,6 @@ class DefaultController extends Controller
         // On récupère le service
         $locate = $this->container->get('mw_geoip.locate');
 
-        var_dump($locate->locateIP($clientIP));
-
         return $this->render('MwGeoipBundle:Default:index.html.twig');
     }
 }
