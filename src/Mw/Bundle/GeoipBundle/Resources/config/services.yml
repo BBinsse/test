@@ -1,0 +1,3 @@
+services:
+    mw_geoip.locate:
+        class: Mw\Bundle\GeoipBundle\Services\Geoip

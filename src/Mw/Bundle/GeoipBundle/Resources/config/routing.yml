@@ -1,0 +1,3 @@
+mw_geoip_homepage:
+    path:     /geoip
+    defaults: { _controller: MwGeoipBundle:Default:index }

@@ -1,0 +1,19 @@
+Hello !
+
+<script>
+
+    function error(msg) {
+        console.log(typeof msg == 'string' ? msg : "failed");
+    }
+
+    function success(position) {
+        console.log(position.coords.latitude, position.coords.longitude);
+    }
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error);
+    } else {
+        error('not supported');
+    }
+
+</script>

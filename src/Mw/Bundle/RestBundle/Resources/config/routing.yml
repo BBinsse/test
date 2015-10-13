@@ -1,0 +1,11 @@
+mw_rest_article:
+    resource: "@MwRestBundle/Resources/config/routing/article.yml"
+    prefix:   /article
+
+mw_rest_comment:
+    resource: "@MwRestBundle/Resources/config/routing/comment.yml"
+    prefix:   /comment
+
+mw_rest_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MwRestBundle:Default:index }

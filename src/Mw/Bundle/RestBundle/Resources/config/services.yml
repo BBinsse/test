@@ -1,0 +1,9 @@
+services:
+#    mw_rest.example:
+#        class: Mw\Bundle\RestBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+    test_format:
+      class: FOS\RestBundle\EventListener\FormatListener
+      arguments: [@fos_rest.exception_format_negotiator]
+      tags:
+        - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }

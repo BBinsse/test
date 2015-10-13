@@ -1,0 +1,11 @@
+mw_rest:
+    resource: "@MwRestBundle/Resources/config/routing.yml"
+    prefix:   /
+
+mw_geoip:
+    resource: "@MwGeoipBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
